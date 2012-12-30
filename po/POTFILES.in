@@ -1,0 +1,5 @@
+# List of source files containing translatable strings.
+
+src/morris-ui.c
+src/morris-term.c
+src/support.c

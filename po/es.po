@@ -1,0 +1,152 @@
+# Spanish translations for morris-sim package.
+# Copyright (C) 2012 Andrew Makousky
+# This file is distributed under the same license as the morris-sim package.
+# Andrew <andrew@localhost>, 2012.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: morris-sim 0.1\n"
+"Report-Msgid-Bugs-To: andrew@localhost\n"
+"POT-Creation-Date: 2012-12-09 13:55-0600\n"
+"PO-Revision-Date: 2012-12-01 14:27-0600\n"
+"Last-Translator: Andrew <andrew@localhost>\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/morris-ui.c:107 src/morris-term.c:161 src/morris-term.c:176
+#: src/morris-term.c:188 src/morris-term.c:208
+#, c-format
+msgid "Player %u's turn.\n"
+msgstr "Es el turno de jugaro %u.\n"
+
+#: src/morris-ui.c:123 src/morris-term.c:212
+#, c-format
+msgid "Player %u won.\n"
+msgstr "Jugaro %u gana.\n"
+
+#: src/morris-ui.c:303 src/morris-term.c:132
+msgid "Just because there's air there doesn't mean you can remove it."
+msgstr ""
+
+#: src/morris-ui.c:306 src/morris-term.c:135
+msgid "Are you crazy?  You don't need to attack your own people."
+msgstr ""
+
+#: src/morris-ui.c:309 src/morris-term.c:138
+msgid ""
+"Sorry, can't do that.  Have you noticed there's a piece outside of a mill?"
+msgstr ""
+
+#: src/morris-ui.c:347 src/morris-term.c:168
+msgid "Don't get me wrong.  That space is already occupied."
+msgstr ""
+
+#: src/morris-ui.c:363 src/morris-ui.c:427 src/morris-term.c:191
+msgid "Which piece will you move?"
+msgstr "¿Qué pieza mover?"
+
+#: src/morris-ui.c:371 src/morris-ui.c:423 src/morris-term.c:126
+msgid "Which piece will you remove?"
+msgstr "¿Que pieza remover?"
+
+#: src/morris-ui.c:373 src/morris-ui.c:580 src/morris-term.c:166
+msgid "Where will you place your piece?"
+msgstr "¿Dónde poner tu pieza?"
+
+#: src/morris-ui.c:392 src/morris-term.c:194
+msgid "Wrong place silly!  You can only move your own pieces."
+msgstr "¡Incorrecto puesto tonto!  Podes soló mover tu piezas."
+
+#: src/morris-ui.c:409 src/morris-term.c:200
+msgid "You can't move into an already occupied space.  Rules are rules."
+msgstr ""
+
+#: src/morris-ui.c:429
+msgid "Where will you move it to?"
+msgstr "¿Dónde está mover?"
+
+#: src/morris-ui.c:490
+msgid ""
+"Ussage: morris-ui <--nogui>\n"
+"If `--nogui' is specified, then a terminal interface will be run\n"
+"instead of a GTK+ graphical interface."
+msgstr ""
+
+#: src/morris-ui.c:531
+msgid "11 Mens Morris"
+msgstr ""
+
+#: src/morris-term.c:105 src/morris-term.c:247
+msgid "Invalid input."
+msgstr ""
+
+#: src/morris-term.c:198
+msgid "Where will you move it to? "
+msgstr ""
+
+#: src/morris-term.c:228
+msgid "Welcome to the 11 Mens Morris simulator."
+msgstr ""
+
+#: src/morris-term.c:232
+msgid ""
+"What would you like to do?\n"
+"0) Quit\n"
+"1) Reinitialize the game state.\n"
+"2) Display the board\n"
+"3) Add a piece\n"
+"4) Move a piece\n"
+"5) Remove a piece\n"
+"6) Play the game\n"
+"7) Game state info"
+msgstr ""
+
+#: src/morris-term.c:241
+msgid "Choice? "
+msgstr ""
+
+#: src/morris-term.c:256
+msgid "Re-initialized game state."
+msgstr ""
+
+#: src/morris-term.c:260 src/morris-term.c:273
+msgid "Where? "
+msgstr ""
+
+#: src/morris-term.c:261
+msgid "Invalid place."
+msgstr ""
+
+#: src/morris-term.c:266
+msgid "From where? "
+msgstr ""
+
+#: src/morris-term.c:267
+msgid "To where? "
+msgstr ""
+
+#: src/morris-term.c:269
+msgid "Invalid move."
+msgstr ""
+
+#: src/morris-term.c:274
+msgid "Invalid remove."
+msgstr ""
+
+#: src/morris-term.c:280
+#, c-format
+msgid ""
+"Current player: %u\n"
+"Setup rounds left: %u\n"
+"Remove state: %u\n"
+"Player 1 pieces: %u\n"
+"Player 2 pieces: %u\n"
+msgstr ""
+
+#: src/support.c:116 src/support.c:140
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "No encontré archivo de pixmap: %s"

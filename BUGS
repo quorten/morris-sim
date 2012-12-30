@@ -1,0 +1,4 @@
+Morris Sim Bugs
+
+When you click on a non-adjacent space to move to, you are told the
+wrong error message.

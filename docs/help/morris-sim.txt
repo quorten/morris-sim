@@ -1,0 +1,80 @@
+Morris Sim User Documentation
+*****************************
+
+Copyright (C) 2012 Andrew Makousky
+See the end of this file for license conditions.
+
+About 9 Mens Morris
+*******************
+
+The 9 Mens Morris game variations have different board layouts and
+different numbers of pieces required for the layout.  9 Mens Morris is
+a solved game, which means that for any given board position, it is
+possible to determine the winner assuming that they play optimally.
+Since 9 Mens Morris is a solved game, I thought it would be a good
+idea to write a simulator for 11 Mens Morris.
+
+The game engine has support for a lot of variations of 9 Mens Morris.
+The generalized name used in this program for all variations of 9 Mens
+Morris combined is N Mens Morris.  Currently, only 11 Mens Morris is
+supported, and none of these variations are taken advantage of.  One
+possible variation that is not taken advantage of is having more than
+two players play the game at the same time.
+
+General Gameplay of 11 Mens Morris
+**********************************
+
+The object of this game is to remove the opponent's pieces until they
+are down to only two pieces.  When your opponent is down to only two
+pieces, then you win.
+
+The game of 11 Mens Morris is divided into two phases: a setup phase
+and the normal game phase.  During the setup phase, each player takes
+turns putting down a piece on the board.  One important layout of
+pieces in the game of 11 Mens Morris is the mill, which is a row,
+column, or diagonal of 3 adjacent pieces of the same player.  There
+must be a line on the board connecting the pieces for them to be
+considered adjacent.  When one or more mills are formed during the
+setup phase, the player who formed the mill gets the opportunity to
+remove one of the opponent's pieces.  Only at the moment a mill is
+formed does the player get to remove the opponent's piece: having
+mills does not provide a continuing opportunity to remove the
+opponent's piece at each turn.  The player must remove an opponent's
+piece that is outside of a mill unless there is no such option.
+Players only place up to 11 pieces on the board.  The more of their
+pieces get removed during the setup phase, the less pieces they have
+for the main gameplay state.
+
+During the main gameplay state, players can move pieces to adjacent
+spaces on the gameboard.  Whenever a player forms one or more mills,
+they get the opportunity to remove one of the opponent's pieces.
+Again, the player can only remove pieces when they create a mill, not
+just when they continue to have one.  The pieces they remove must also
+be either outside of a mill or any piece if there are no other
+options.
+
+It's possible for a player to have no move opportunities during their
+turn.  As of now, the interactive game will just get deadlocked
+flagging all player moves as invalid.
+
+License Conditions
+******************
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,0 +1,45 @@
+/* Windows resource script.
+   This file is in Public Domain.  */
+
+#ifdef HAVE_CONFIG_H
+#  include <config.h>
+#endif
+
+#include <windows.h>
+
+
+//101 ICON "../morris-ui.ico"
+
+1 VERSIONINFO
+FILEVERSION		0,1,0,0 /* This must be hand-tuned on releases.  */
+PRODUCTVERSION	0,1,0,0
+/* For those who are interested, you should specify VS_FF_PRIVATEBUILD
+for file flags and the StringFileInfo block should contain a
+PrivateBuild string when you build from the sources yourself.  */
+FILEFLAGSMASK		0
+FILEFLAGS		0
+FILEOS			VOS__WINDOWS32
+FILETYPE		VFT_APP
+FILESUBTYPE		VFT2_UNKNOWN
+{			
+	BLOCK "StringFileInfo"
+	{
+		BLOCK "040904E4"
+		{
+			//VALUE "Comments"
+			VALUE "CompanyName", "Andrew Makousky"
+			VALUE "FileDescription", "11 Mens Morris"
+			VALUE "FileVersion", PACKAGE_VERSION
+			VALUE "InternalName", "11 Mens Morris"
+			VALUE "LegalCopyright", "Copyright © 2012 Andrew Makousky"
+			//VALUE "LegalTrademarks"
+			VALUE "OriginalFilename", "morris-sim.exe"
+			VALUE "ProductName", "11 Mens Morris"
+			VALUE "ProductVersion", PACKAGE_VERSION
+		}
+	}
+	BLOCK "VarFileInfo"
+	{
+		VALUE "Translation", 0x0409, 1252
+	}
+}

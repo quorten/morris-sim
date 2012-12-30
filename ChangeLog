@@ -1,0 +1,8 @@
+2012-12-02  Andrew Makousky  <andrew@localhost>
+
+	* src/morris-ui.c: Fixed mouse selection bug.
+
+2012-12-01  Andrew Makousky  <andrew@localhost>
+
+	* configure.ac: Initial build system created.
+

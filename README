@@ -1,0 +1,69 @@
+Morris Sim README
+*****************
+
+Copyright (C) 2012 Andrew Makousky
+See the end of this file for license conditions.
+
+This is a interactive game for 11 Mens Morris, a variant of 9 Mens
+Morris.  Originally, it was intended to be a simulator for 11 Mens
+Morris, but the simulator engine has not been written yet.  Morris Sim
+makes use of bit packing and vector optimizations so that the
+simulator can run as quickly as possible.  Note that these
+optimizations can hamper portability to processor architectures that
+are not x86 or x86-64.  The unoptimized code is not tested as much as
+the optimized code, but it should work just as well as the optimized
+code.
+
+Installation instructions for building Morris Sim from the source are
+in the file INSTALL.  Be sure to read about how to set up proper
+compiler optimization.  Right now, Debian packages, Red Hat packages,
+(Mac) OS X DMG installers, Nullsoft installers, and Windows MSI
+installer packages are only supported through manual creation.  There
+are no automatic scripts for these included within the source package.
+
+The file AUTHORS contains a list of code contributors to this project.
+For the list of translators, see the file TRANSLATORS.
+
+For a list of user visible changes, see the file NEWS.  "ChangeLog"
+contains a list of source code changes.  "COPYING" contains Morris
+Sim's license: the Expat MIT license.
+
+"autogen.sh" is used to generate files related to the build system.
+"aclocal.m4" is used by "configure" as a local list of macros used
+from other macro packages.  "config.h.in" is processed by "configure"
+to create a configuration header when building the project.
+"configure.ac" is the Autoconf source file that "configure" is
+generated from.
+
+"Makefile.am" is the Automake source file used to generate
+"Makefile.in".  "Makefile.in" is processed by "configure" to create
+the project makefile.
+
+Here is a brief overview of the subdirectories:
+build-aux/      Auxiliary build tools for Autoconf, Automake, and
+                Libtool
+docs/           Help and reference documentation
+po/             Localization files
+src/            Morris Sim source code
+
+License Conditions
+******************
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
